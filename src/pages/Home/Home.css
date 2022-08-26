@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bs-pink: #d63384; 
+    --grey-text:#3f4254;
+    --bs-blue: #009ef7;
+    --bg-grey:#F5F8FA;
+}
+body{
+    background-color: #F5F8FA !important;
+    font-family:sans-serif;
+}
+.card{
+    padding: 1em  2.25em !important;
+    color: black;
+    min-width: 32% !important;
+    border: none !important;
+    transition: all 0.3s;
+    margin-top: 2vh !important;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+}
+.hoverColor1:hover{
+    color: white;
+    background-color: #F1416C;
+}
+.hoverColor3:hover{
+    color: white;
+    background-color: #50CD89;
+}
+.hoverColor2:hover{
+    color: white;
+    background-color: #009ef7;;
+}
+.h4{
+    font-size: small !important;
+}
+.graphCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.graph2{
+    width:50%;
+    text-align: center;
+}
+.competitor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.grey{
+    color: #B5B8D3;
+}
+.blue-text{
+    color: #08A0F7;
+}
+.competitor{
+    margin-top: 15px;
+    height: 80px;
+}
+.competitor img{
+    border-radius: 5px ;
+    width: 90px;
+    height: 60px;
+    margin-right: auto;
+
+}
+.details h5{
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+    font-size: 1em;
+    color:#3f4254 ;
+}
+.dark-grey{
+    color: #3f4254;
+}
+.by-text{
+    position: relative;
+    top: -10px;
+}
+.addProductButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform:translateY(-100%);
+    margin-left:70%;
+    max-width: 80%;
+    height: 40px ;
+    border-radius: 5px;
+    background-color: var(--bg-grey);  
+    transition: 0.3s;  
+}
+
+tr{
+    border-bottom:1px dashed --grey-text !important;
+
+
+}
+.authorStats{
+    background-color: white !important;
+}
+.authorImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+th{
+    color: var(--grey-text);
+    font-size: 13px;
+    font-weight: 400;
+}
+.authorSkills{
+    font-size: 0.8em;
+}
+.progressBar{
+    height: 8px !important;
+    width: 150px;
+}
+.Holder{
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.actionBtn{
+    background-color: var(--bg-grey) !important;
+    height: 30px;
+    width: 30px;
+    margin-left:2px ;
+    padding-left:5px ;
+    padding-top: 5px;
+    color: var(--grey-text);
+}
+.actionBtn1{
+    background-color: var(--bg-grey) !important;
+    height: 30px;
+    width: 30px;
+    margin-left:2px ;
+    padding-left:5px ;
+    color: var(--grey-text);
+
+}
+button svg{
+    color: #B5B8D3;
+    margin-right: 10px !important;
+}
+.authorDetail{
+    justify-content: flex-start;
+    flex-direction: column;
+    font-weight: 600;
+}
+.linkText{
+    text-decoration: none;
+    color: var(--grey-text);
+}
+td span a:hover{
+    color:var(--bs-blue) !important;
+}
+.addProductButton:hover{
+    background-color: var(--bs-blue);
+}
+.addProductButton:hover a{
+    color: white !important;
+    background-color: var(--bs-blue);
+}
+.trendImg{
+    width: 25px !important;
+    border-radius: 10px;
+}
+.imgHolder{
+    background-color: var(--bg-grey);
+    border-radius: 6px;
+    padding-right:12px ;
+    margin-right:16px ;
+}
+.trendPrice{
+    background-color:#F5F8FA;
+    border-radius: 5px;
+    color: #7E89B2;
+    font-weight: 600;
+}
