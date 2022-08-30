@@ -67,8 +67,8 @@ body{
     color: #08A0F7;
 }
 .competitor{
-    margin-top: 15px;
-    height: 80px;
+    height: 8
+    0px;
 }
 .competitor img{
     border-radius: 5px ;
@@ -195,4 +195,24 @@ td span a:hover{
     border-radius: 5px;
     color: #7E89B2;
     font-weight: 600;
+}
+
+input[type=checkbox]{
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #50CD89;
+  
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    /* background-color only for content */
+    border-radius: 6px;
+    background-color: #EFF2F5;
+    margin-left: 15px;
+    margin-right: 15px;
+ 
+}
+input[type=checkbox]:checked{
+    background-color: #009ef7;
 }

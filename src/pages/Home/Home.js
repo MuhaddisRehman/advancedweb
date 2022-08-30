@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import LineCharts from '../Home/LineChart/LineCarts'
-import '../Home/Home.css'
+import '../Home/Home.css';
 // import DoughnutChart from './DoughnutChart/DoughnutChart';
 import competitor1 from '../../Assets/HomeImages/Competitors/img-3.jpg';
 import competitor2 from '../../Assets/HomeImages/Competitors/img-4.jpg';
@@ -105,11 +105,13 @@ function Dashboard() {
             <h5>My Competitors</h5>
             <small className='grey'>More than 400 +new products</small>
           </header>
-          <Competitors Img={competitor1} title="Cup & Green" Manager="CoreAd" Price="24,900"/>
-          <Competitors Img={competitor2} title="Yellow Hearts" Manager=" KeenThemes" Price="70,900"/>
-          <Competitors Img={competitor3} title="Nike & Blue" Manager="Invision Inc." Price="7,200"/>
-          <Competitors Img={competitor4} title="Red Boots" Manager="Figma Studio" Price="36,450"/>
-          <Competitors Img={competitor5} title="Desserts platter" Manager="Figma Studio" Price="64,753"/>
+          <section className='mt-3'>
+              <Competitors Img={competitor1} title="Cup & Green" Manager="CoreAd" Price="24,900"/>
+              <Competitors Img={competitor2} title="Yellow Hearts" Manager=" KeenThemes" Price="70,900"/>
+              <Competitors Img={competitor3} title="Nike & Blue" Manager="Invision Inc." Price="7,200"/>
+              <Competitors Img={competitor4} title="Red Boots" Manager="Figma Studio" Price="36,450"/>
+              <Competitors Img={competitor5} title="Desserts platter" Manager="Figma Studio" Price="64,753"/>
+          </section>
         </div>
         <div className='col-lg-8 col-md-12 col-sm-12 card'>
           <header>
@@ -123,7 +125,7 @@ function Dashboard() {
             <thead>
               <tr>
                 <th><input type="checkbox" /> Authors</th>
-                <th>Company</th>
+                <th >Company</th>
                 <th>Progress</th>
                 <th>Actions</th>
               </tr>
@@ -150,18 +152,24 @@ function Dashboard() {
             </h5>
             <small  className="grey">Latest Tech trends</small>
           </header>
-          <TrendsRow Img={trend4} title="Top Authors" description="Mark, Rowling, Esther" Price="+82$"/>
-          <TrendsRow Img={trend5} title="Popular Authors" description="John, Pat, Jimmy" Price="+280$"/>
-          <TrendsRow Img={trend6} title="New Users" description="Mark, Rowling, Esther" Price="+4500$"/>
-          <TrendsRow Img={trend1} title="Active Customers" description="Mark, Rowling, Esther" Price="+686$"/>
-          <TrendsRow Img={trend3} title="Bestseller Theme" description="Disco, Retro, Sports" Price="+726$"/>
-          <TrendsRow Img={trend2} title="Fox Broker App" description="Finance, Corporate, Apps" Price="+145$"/>
+          <section className=''>
+              <TrendsRow Img={trend4} title="Top Authors" description="Mark, Rowling, Esther" Price="+82$"/>
+              <TrendsRow Img={trend5} title="Popular Authors" description="John, Pat, Jimmy" Price="+280$"/>
+              <TrendsRow Img={trend6} title="New Users" description="Mark, Rowling, Esther" Price="+4500$"/>
+              <TrendsRow Img={trend1} title="Active Customers" description="Mark, Rowling, Esther" Price="+686$"/>
+              <TrendsRow Img={trend3} title="Bestseller Theme" description="Disco, Retro, Sports" Price="+726$"/>
+              <TrendsRow Img={trend2} title="Fox Broker App" description="Finance, Corporate, Apps" Price="+145$"/>
+          </section>
         </div>
         <div className="col-xl-3 card">
           <header>
             <h5>Activities</h5>
             <small  className="grey">890,344 Sales</small>
           </header>
+          <section>
+            <ActivitiesList time="08:42"/>
+            <i className='fa fa-genderless fs-1 text-danger'></i>
+          </section>
         </div>
         <div className="col-xl-3 card"></div>
 
@@ -263,3 +271,9 @@ function TrendsRow(props){
     </div>
   );
 };
+function ActivitiesList(props){
+return(
+      <>
+        {props.time}
+      </>
+)}
