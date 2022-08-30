@@ -198,11 +198,10 @@ td span a:hover{
 }
 
 input[type=checkbox]{
-     -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #50CD89;
-  
+    background-color: #50CD89;  
     width: 20px;
     height: 20px;
     padding: 6px;
@@ -211,8 +210,23 @@ input[type=checkbox]{
     background-color: #EFF2F5;
     margin-left: 15px;
     margin-right: 15px;
- 
+
 }
 input[type=checkbox]:checked{
     background-color: #009ef7;
+}
+.todoList{
+    height: 40px;
+    width: 4px;
+    margin:8px;
+    border-radius: 5px;
+}
+.todoTitle{
+    font-weight: 600;
+    color:#3f4254 ;
+
+}
+.activityText{
+    font-weight:600;
+
 }

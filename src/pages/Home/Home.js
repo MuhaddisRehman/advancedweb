@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 // import LineCharts from '../Home/LineChart/LineCarts'
 import '../Home/Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGenderless } from '@fortawesome/free-solid-svg-icons';
 // import DoughnutChart from './DoughnutChart/DoughnutChart';
 import competitor1 from '../../Assets/HomeImages/Competitors/img-3.jpg';
 import competitor2 from '../../Assets/HomeImages/Competitors/img-4.jpg';
@@ -166,13 +168,34 @@ function Dashboard() {
             <h5>Activities</h5>
             <small  className="grey">890,344 Sales</small>
           </header>
-          <section>
-            <ActivitiesList time="08:42"/>
-            <i className='fa fa-genderless fs-1 text-danger'></i>
-          </section>
-        </div>
-        <div className="col-xl-3 card"></div>
+          <div className='d-flex row justify-content-center align-items-center  '>
+            
+            <ActivitiesList time="08:42" description="Outlines keep you honest. And keep structure" color="text-warning " textType="grey"/>
+            <ActivitiesList time="10:00"  color="text-success" description="AEOL meeting" textType="dark-grey" />
+            <ActivitiesList time="14:37"  color="text-danger" description ="Make deposit USD 700. to ESL"  textType="dark-grey"/>
+            <ActivitiesList time="16:50"  color="text-info" description="Make deposit USD 700. to ESL" textType="grey" />
+            <ActivitiesList time="21:03"  color="text-danger"description="New order placed #XF-2356."  textType="dark-grey"/>
+            <ActivitiesList time="16:50"  color="text-info" description="Indulging in poorly driving and keep structure keep great" textType="grey"/>
+            <ActivitiesList time="21:03"  color="text-danger" description="New order placed #XF-2356." textType="dark-grey"/>
+            <ActivitiesList time="10:30"  color="text-success" description="Finance KPI Mobile app launch preparion meeting" textType="grey" />
 
+          </div>
+        </div>
+        
+        <div className="col-xl-3 card">
+        <header>
+          <h5>Todo</h5>
+        </header>
+        <section>
+        <TodoList color="bg-success" title="Create FireStone Logo" dueDate="Due in 2 Days" />
+        <TodoList color="bg-info" title="Stakeholder Meeting" dueDate="Due in 3 Days"/>
+        <TodoList color="bg-warning" title="Scoping & Estimations"dueDate="Due in 5 Days" />
+        <TodoList color="bg-info"title="KPI App Showcase" dueDate="Due in 2 Days"/>
+        <TodoList color="bg-danger" title="Project Meeting" dueDate="Due in 12 Days"/>
+        <TodoList color="bg-success" title="Customers Update"dueDate="Due in 1 Days"/>
+        </section>
+        </div>
+        
       </div>
     
     </div>
@@ -273,7 +296,29 @@ function TrendsRow(props){
 };
 function ActivitiesList(props){
 return(
-      <>
+      <div>
         {props.time}
-      </>
+        
+        <FontAwesomeIcon icon={faGenderless} className={`${props.color} fs-4 p-1 `}  />
+        
+        <div><small className={`${props.textType} activityText `}>{props.description}</small></div>
+      </div>
+)}
+function TodoList(props){
+return(
+  <div className=' d-flex align-items-center mb-2'>
+    <span className={`${props.color} todoList bg-success`}>
+    </span>
+    <input type="checkbox" />
+    <div className='d-flex row align-items-center '>
+    <div className='todoTitle'>
+      {props.title}
+    </div>
+    <div >
+    <small className='grey'>
+    {props.dueDate}
+    </small>
+    </div>
+    </div>
+  </div>
 )}
