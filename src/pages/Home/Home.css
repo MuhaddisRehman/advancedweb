@@ -16,19 +16,12 @@ body{
 .card{
     padding: 1em  2.25em !important;
     color: black;
-    min-width: 32% !important;
     border: none !important;
     transition: all 0.3s;
-    margin-top: 2vh !important;
-    overflow: hidden;
     cursor: pointer;
     
 }
-.cardContainer{
-    display: flex;
-    justify-content: space-between;
-    gap: 1px;
-}
+
 .hoverColor1:hover{
     color: white;
     background-color: #F1416C;

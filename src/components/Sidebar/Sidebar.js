@@ -1,4 +1,4 @@
-import {  NavLink } from 'react-router-dom';
+import {  NavLink, Outlet } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import '../Sidebar/Sidebar.css'
 import iconImg from "../../Assets/Images/icon.png";
@@ -8,9 +8,10 @@ function Sidebar() {
 
   return (
     <div>
+      <Outlet/>
       <div className="Navbar">
-        
-          <div className="img ms-auto">sdfasdf</div>
+        aaaaaaaaaaaaa
+          <div className="img ms-auto">aaaaaaaaaaaaa</div>
         </div>
         <nav className='nav-menu pt-3 '>
           <ul className="nav-menu-items">

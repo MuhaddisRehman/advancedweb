@@ -60,8 +60,9 @@ function Dashboard() {
         };
   return (
     <div className='container   '>
-      <div className="col-lg-12 row cardContainer">
-        <div style={ {backgroundColor: isActive ?'#F1416C' : '', color: isActive ? 'white': '',}} className="col-lg-3 col-md-12 card hoverColor1" onClick={handleClick}>
+
+      <div className="  row   justify-content-between g-5" >
+        <div style={ {backgroundColor: isActive ?'#F1416C' : '', color: isActive ? 'white': '',}} className="col-lg-4 col-md-12 card hoverColor1" onClick={handleClick}>
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M21 10H13V11C13 11.6 12.6 12 12 12C11.4 12 11 11.6 11 11V10H3C2.4 10 2 10.4 2 11V13H22V11C22 10.4 21.6 10 21 10Z" fill="currentColor"></path>
 													<path opacity="0.3" d="M12 12C11.4 12 11 11.6 11 11V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V11C13 11.6 12.6 12 12 12Z" fill="currentColor"></path>
@@ -71,7 +72,7 @@ function Dashboard() {
         <div><small>Lands, Houses, Ranchos, Farms</small></div>
 
         </div>
-        <div style={ {backgroundColor: isActive1 ?'#009ef7' : '', color: isActive1 ? 'white': '',}} className="col-lg-3 col-md-12 card hoverColor2" onClick={handleClick1}>
+        <div style={ {backgroundColor: isActive1 ?'#009ef7' : '', color: isActive1 ? 'white': '',}} className="col-lg-4 col-md-12 card hoverColor2" onClick={handleClick1}>
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path opacity="0.3" d="M18 21.6C16.3 21.6 15 20.3 15 18.6V2.40001C15 2.20001 14.6 1.99996 14.3 2.19996L13 3.59999L11.7 2.3C11.3 1.9 10.7 1.9 10.3 2.3L9 3.59999L7.70001 2.3C7.30001 1.9 6.69999 1.9 6.29999 2.3L5 3.59999L3.70001 2.3C3.40001 2.1 3 2.20001 3 3.40001V18.6C3 20.3 4.3 21.6 6 21.6H18Z" fill="currentColor"></path>
 													<path d="M12 12.6H11C10.4 12.6 10 12.2 10 11.6C10 11 10.4 10.6 11 10.6H12C12.6 10.6 13 11 13 11.6C13 12.2 12.6 12.6 12 12.6ZM9 11.6C9 11 8.6 10.6 8 10.6H6C5.4 10.6 5 11 5 11.6C5 12.2 5.4 12.6 6 12.6H8C8.6 12.6 9 12.2 9 11.6ZM9 7.59998C9 6.99998 8.6 6.59998 8 6.59998H6C5.4 6.59998 5 6.99998 5 7.59998C5 8.19998 5.4 8.59998 6 8.59998H8C8.6 8.59998 9 8.19998 9 7.59998ZM13 7.59998C13 6.99998 12.6 6.59998 12 6.59998H11C10.4 6.59998 10 6.99998 10 7.59998C10 8.19998 10.4 8.59998 11 8.59998H12C12.6 8.59998 13 8.19998 13 7.59998ZM13 15.6C13 15 12.6 14.6 12 14.6H10C9.4 14.6 9 15 9 15.6C9 16.2 9.4 16.6 10 16.6H12C12.6 16.6 13 16.2 13 15.6Z" fill="currentColor"></path>
@@ -80,7 +81,7 @@ function Dashboard() {
         <div className='mt-4 mb-2'><h4>Appartments</h4></div>
         <div><small>Flats, Shared Rooms, Duplex</small></div>
         </div>
-        <div style={ {backgroundColor: isActive2 ?'#40CD89' : '', color: isActive2 ? 'white': '',}} className="col-lg-3 col-md-12 card hoverColor3" onClick={handleClick2}>
+        <div style={ {backgroundColor: isActive2 ?'#40CD89' : '', color: isActive2 ? 'white': '',}} className="col-lg-4 col-md-12 card hoverColor3" onClick={handleClick2}>
     
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.3" d="M14 12V21H10V12C10 11.4 10.4 11 11 11H13C13.6 11 14 11.4 14 12ZM7 2H5C4.4 2 4 2.4 4 3V21H8V3C8 2.4 7.6 2 7 2Z" fill="currentColor"></path>
@@ -102,7 +103,7 @@ function Dashboard() {
           </div>
         </div>
         <div className=" col-lg-3 col-md-12 graphCards card"></div> */}
-        <div className='col-lg-3 col-md-12 card'>
+        <div className='col-xl-4 col-lg-4 col-md-12 card'>
           <header>
             <h5>My Competitors</h5>
             <small className='grey'>More than 400 +new products</small>
@@ -115,7 +116,7 @@ function Dashboard() {
               <Competitors Img={competitor5} title="Desserts platter" Manager="Figma Studio" Price="64,753"/>
           </section>
         </div>
-        <div className='col-lg-8 col-md-12 col-sm-12 card'>
+        <div className='col-xl-8 col-lg-8 col-md-12 col-sm-12 card'>
           <header>
             <h5>Products Statistics</h5>
             <small className='grey'>Over 500 products</small>
@@ -319,6 +320,9 @@ return(
     {props.dueDate}
     </small>
     </div>
+    </div>
+    <div className='d-flex justify-content-center align-items-center bg-success pe-3 pt-1 pb-1'>
+      <small className='ms-3 '>New</small>
     </div>
   </div>
 )}
